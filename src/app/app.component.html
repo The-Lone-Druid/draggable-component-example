@@ -1,0 +1,24 @@
+<h1>{{ name }}</h1>
+
+<p>Required npm package is <b>@angular/cdk</b></p>
+
+1. We'll need to set the boundry for our drag drop component or it may stuck at
+the corners of our screen. 2. Once the boundry is set, we can use
+<b>@angular/cdk</b>'s special directives like
+<ul>
+  <li><b>cdkDrag</b> - sets component as draggable.</li>
+  <li>
+    <b>cdkDragBoundry</b> - takes in the parent's classname, element name or id
+    to set the boundy.
+  </li>
+</ul>
+<h4>Example:</h4>
+<div class="drag-drop-boundry" style="height: 250px; border: 1px dashed black;">
+  <div
+    class="shadow-sm m-2 p-4 border rounded-3 draggable-component"
+    cdkDragBoundary=".drag-drop-boundry"
+    cdkDrag
+  >
+    Hey there I'm draggable.
+  </div>
+</div>

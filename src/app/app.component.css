@@ -1,0 +1,9 @@
+p {
+  font-family: Lato;
+}
+
+.draggable-component {
+  max-width: 200px;
+  text-align: center;
+  cursor: move;
+}
